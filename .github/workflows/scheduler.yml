@@ -2,7 +2,7 @@ name: Scheduled Message
 
 on:
   schedule: 
-    - cron: "55 15 * * *"
+    - cron: "02 16 * * *"
 
 jobs:
   print_message:
