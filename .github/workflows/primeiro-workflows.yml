@@ -27,7 +27,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Python version
-        run: python --version
+        run: python --version && pwd && ls
 
       - name: Executando script python
         run: python hello.py
