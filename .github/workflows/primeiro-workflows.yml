@@ -18,16 +18,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-
-      # Runs a single command using the runners shell
-      - name: Instala python3
-        run: sudo apt update && sudo apt install python3 -y
-
-      # Runs a set of commands using the runners shell
-      - name: Python version
-        run: python --version && pwd && ls
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
       - name: Executando script python
         run: python hello.py
