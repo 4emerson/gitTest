@@ -1,0 +1,14 @@
+name: Scheduled Message
+
+on:
+  schedule: 
+    - cron: "50 15 * * *"
+
+jobs:
+  print_message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir mensagem
+        run: echo "Bom dia! Essa é uma execução agendada do GitHub Actions."
+
+####
