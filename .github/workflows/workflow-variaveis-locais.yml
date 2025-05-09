@@ -10,4 +10,4 @@ jobs:
       MY_VARIABLE: "Olá, GitHub Actions"
     steps:
       - name: Exibir Váriavel local
-        run: echo "A variável contém: $MY_VARIABLE"
+        run: echo "A variável contém:" $MY_VARIABLE
