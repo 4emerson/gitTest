@@ -7,14 +7,14 @@ jobs:
   variavel-de-repositorio:
     runs-on: ubuntu-latest
     steps:
-      - name: Exibir variável do Repositório
+      - name: Exibir variável do AMBIENTE
         run: echo "O ambiente de execução é:" ${{ vars.AMBIENTE }}
 
     steps:
-      - name: Exibir variável do Repositório
-        run: echo "País:" ${{ vars.PAIS }}
+      - name: Exibir variável do AMBIENTE
+        run: echo "País:" ${{ vars.AMBIENTE }}
 
 
     steps:
-      - name: Exibir variável do Repositório
+      - name: Exibir variável do ESTADO
         run: echo "Estado:" ${{ vars.ESTADO }}
