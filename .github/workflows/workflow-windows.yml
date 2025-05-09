@@ -1,0 +1,10 @@
+name: Windows Runner
+on: 
+  workflow_dispatch: #Disparo manual
+
+jobs:
+  teste-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Testando comando PowerShell
+        run: Write-Output "Executando no Windows, topzeira"
