@@ -1,0 +1,10 @@
+name: Github - Variáveis Global
+on: 
+  workflow_dispatch: #Disparo manual
+
+jobs:
+  github-variaveis-global:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir Váriavel Global GITHUB_RUN_ID
+        run: echo "A variável contém:" ${{ GITHUB_RUN_ID }}
