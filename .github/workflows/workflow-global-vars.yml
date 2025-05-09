@@ -10,7 +10,7 @@ jobs:
         run: echo "A variável GITHUB_RUN_ID contém:" ${{ github.run_number }}
     steps:
       - name: Exibir Váriavel Global GITHUB_REPOSITORY
-        run: echo "A variável GITHUB_RUN_ID contém:" ${{ github.repository }}
+        run: echo "A variável GITHUB_RUN_ID contém:" ${{ github.repository_id }}
 
 
         
