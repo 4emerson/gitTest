@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Exibir Váriavel Global GITHUB_RUN_ID
-        run: echo "A variável contém:" ${{ GITHUB_RUN_ID }}
+        run: echo "A variável GITHUB_RUN_ID contém:" ${{ github.run_id }}
