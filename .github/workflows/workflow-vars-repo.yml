@@ -9,3 +9,12 @@ jobs:
     steps:
       - name: Exibir variável do Repositório
         run: echo "O ambiente de execução é:" ${{ vars.AMBIENTE }}
+
+    steps:
+      - name: Exibir variável do Repositório
+        run: echo "País:" ${{ vars.PAIS }}
+
+
+    steps:
+      - name: Exibir variável do Repositório
+        run: echo "Estado:" ${{ vars.ESTADO }}
